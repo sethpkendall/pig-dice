@@ -56,6 +56,8 @@ $(document).ready(function(){
       isPlaying = goesSecond;
     }
     $("#currentTurn").text(isPlaying.name);
+    $(".user1Total").text(user1.name)
+    $(".user2Total").text(user2.name)
   });
   $("#myButton").click(function() {
     var myDice = new Dice();
@@ -63,6 +65,49 @@ $(document).ready(function(){
     console.log(rollHold);
     if (rollHold==="1") {
       var rollResult = parseInt((myDice.sides[Math.floor((Math.random() *6)+0)]));
+      if (rollResult===1) {
+        $("#one").show();
+        $("#two").hide();
+        $("#three").hide();
+        $("#four").hide();
+        $("#five").hide();
+        $("#six").hide();
+      } else if (rollResult===2) {
+        $("#one").hide();
+        $("#two").show();
+        $("#three").hide();
+        $("#four").hide();
+        $("#five").hide();
+        $("#six").hide();
+      } else if (rollResult===3) {
+        $("#one").hide();
+        $("#two").hide();
+        $("#three").show();
+        $("#four").hide();
+        $("#five").hide();
+        $("#six").hide();
+      } else if (rollResult===4) {
+        $("#one").hide();
+        $("#two").hide();
+        $("#three").hide();
+        $("#four").show();
+        $("#five").hide();
+        $("#six").hide();
+      } else if (rollResult===5) {
+        $("#one").hide();
+        $("#two").hide();
+        $("#three").hide();
+        $("#four").hide();
+        $("#five").show();
+        $("#six").hide();
+      } else {
+        $("#one").hide();
+        $("#two").hide();
+        $("#three").hide();
+        $("#four").hide();
+        $("#five").hide();
+        $("#six").show();
+      }
       console.log(rollResult);
       if(rollResult!==1) {
         turnTotal += rollResult;

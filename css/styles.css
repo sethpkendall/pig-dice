@@ -4,3 +4,46 @@
 #game {
   display: none;
 }
+/*.pix {
+  display: none;
+}*/
+#one{
+  display: none;
+}
+#two{
+  display: none;
+}
+#three{
+  display: none;
+}
+#four{
+  display: none;
+}
+#five{
+  display: none;
+}
+#six{
+  display: none;
+}
+#turnTotal {
+  font-size: 400%;
+  font-weight:bold;
+  text-align: center;
+}
+#user1Score {
+  font-size: 400%;
+  font-weight: bold;
+  text-align: right;
+}
+#user2Score {
+  font-size: 400%;
+  font-weight: bold;
+  text-align: right;
+}
+.playerScore h5 {
+  text-decoration: underline;
+  font-weight: bold;
+}
+.pix {
+  text-align: center;
+}
