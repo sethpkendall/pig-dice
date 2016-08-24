@@ -9,6 +9,73 @@
     <title></title>
   </head>
   <body>
-    
+    <div class="container">
+      <div id="landing">
+        <div class="row">
+          <div class="col-xs-6">
+            <div class="row">
+              <div class="col-xs-6">
+                <h3>User 1</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="user1">Player 1 name</label>
+                    <input id="user1" class="form-control" type="text">
+                  </div>
+                </form>
+              </div>
+              <div class="col-xs-6">
+                <h3>User2</h3>
+                <form>
+                  <div class="form-group">
+                    <label for="user2">Player 2 name</label>
+                    <input id="user2" class="form-control" type="text">
+                  </div>
+                </form>
+              </div>
+              <button type="submit" name="submit" class="btn btn-primary startButton" id="startButton">Let's get started</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="game">
+        <div class="row">
+          <div class="col-xs-4">
+            <h3><span id="currentTurn"></span>'s turn</h3>
+            <form>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="rollHold" value="1" >
+                  Roll
+               </label>
+              </div>
+              <div class="radio">
+                <label>
+                  <input type="radio" name="rollHold" value="2">
+                  Hold
+                </label>
+              </div>
+              <button type="button" name="button" class="btn btn-primary" id="myButton">Roll that bone! </button>
+            </form>
+          </div>
+          <div class="col-xs-4">
+            <p>Dice roll display Here </p>
+            <hr>
+            <p><span id="turnTotal"></span></p>
+          </div>
+          <div class="col-xs-4">
+            <div class="row">
+              <div class="col-xs-6 totalHeader playerScore">
+                Player 1 Total <br>
+                <span id="user1Score"></span>
+              </div>
+              <div class="col-xs-6 totalHeader playerScore">
+                Player 2 Total <br>
+                <span id="user2Score"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
